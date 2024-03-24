@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Calci</title>
+        <style>
+            input{
+                width : 120px;
+                height : 120px;
+                width : 75px;
+                height : 75px;
+                font-size : 28px;
+                margin:5px;
+            }
+            .ct{
+                width : 97%;
+                text-align: right;
+                background-color: lightgray;
+                padding : 10px;
+            }
+            table{
+                border:2px solid black;
+                border-radius : 2.5px;
+                background-color: lightsteelblue;
+            }
+            .cal{
+                background-image : url('https://png.pngtree.com/background/20210712/original/pngtree-oval-border-hand-drawn-math-education-background-picture-image_1178883.jpg');
+                background-size : 100% 100%;
+                background-position:center;
+                padding :20px;
+                background-repeat :  no-repeat;
+            }
+            .f{
+                margin-left : 20%;
+                margin-right : 48%;
+                margin-top: 60px;
+            }
+        </style>
+    </head>
+    <body class = "cal">
+        <p  style = "font-family:Arial, Helvetica, sans-serif; margin-left : 30% "><font size = "9"><b>Calculator</b></font></p>
+        <br>
+        <form class = "f">
+            <table align = "center">
+                <tr>
+                    <td>
+                        <input type = "text" name = "Input" class = "ct">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type = "button" value = "1" Onclick = "Input.value += '1'">
+                        <input type = "button" value = "2" Onclick = "Input.value += '2'">
+                        <input type = "button" value = "3" Onclick = "Input.value += '3'">
+                        <input type = "button" value = "+" Onclick = "Input.value += '+'">
+                        <input type = "button" value = "DEL" Onclick = "Input.value = Input.value.slice(0,Input.value.length-1)">
+                        <br>
+                        <input type = "button" value = "4" Onclick = "Input.value += '4'">
+                        <input type = "button" value = "5" Onclick = "Input.value += '5'">
+                        <input type = "button" value = "6" Onclick = "Input.value += '6'">
+                        <input type = "button" value = "-" Onclick = "Input.value += '-'">
+                        <input type = "button" value = "X^2" Onclick = "Input.value **= 2">
+                        <br>
+                        <input type = "button" value = "7" Onclick = "Input.value += '7'">
+                        <input type = "button" value = "8" Onclick = "Input.value += '8'">
+                        <input type = "button" value = "9" Onclick = "Input.value += '9'">
+                        <input type = "button" value = "*" Onclick = "Input.value += '*'">
+                        <input type = "button" value = "X^3" Onclick = "Input.value **= 3">
+                        <br>
+                        <input type = "button" value = "CLR" Onclick = "Input.value = ' '">
+                        <input type = "button" value = "0" Onclick = "Input.value += '0'">
+                        <input type = "button" value = "=" Onclick = "Input.value = eval(Input.value)">
+                        <input type ="button" value = "/" Onclick = "Input.value += '/'">
+                        <input type = "button" value = "Sqrt" Onclick = "Input.value = Math.sqrt(Input.value)"> 
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
